@@ -1,0 +1,5 @@
+Django~=2.0.6
+numpy==1.14.6
+chainer==5.0.0
+opencv-python==3.4.3.18
+pillow==4.0.0

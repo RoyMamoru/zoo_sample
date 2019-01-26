@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <!-- materialize CSSのCDN経由での読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>{% block title %}アニマル図鑑{% endblock %}</title>
+  </head>
+
+  <body>
+    <div class="col s12 orange lighten-3" style="padding:30px">
+        <span class="white-text col s6" style="font-size:20px;">
+          <a href="/" style="color:white">アニマル図鑑</a>
+        </span>
+    </div>
+
+    <div class="contents" style="margin:0 20px">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+  {% block js %}
+
+  {% endblock %}
+  </body>
+</html>
